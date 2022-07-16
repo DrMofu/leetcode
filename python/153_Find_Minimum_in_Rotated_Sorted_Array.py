@@ -4,8 +4,8 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        if nums[-1]>=nums[0]:
-            return nums[0]
+        # if nums[-1]>=nums[0]:
+        #     return nums[0]
         left = 0
         right = len(nums)-1
         last_one = nums[-1]
