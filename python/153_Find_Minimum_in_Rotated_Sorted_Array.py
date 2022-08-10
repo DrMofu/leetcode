@@ -11,8 +11,8 @@ class Solution(object):
         last_one = nums[-1]
         while left<right:
             mid = (left+right)//2
-            if nums[mid]>last_one: # in the left area
+            if nums[mid]>last_one: # in the right area
                 left = mid+1
-            else: # in the right area
+            else: # in the left area
                 right = mid
         return nums[left]
