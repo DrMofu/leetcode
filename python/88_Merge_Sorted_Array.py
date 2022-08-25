@@ -19,10 +19,10 @@ class Solution(object):
                 nums1[total]=nums2[right]
                 right-=1
                 total-=1
-        while left>=0:
-            nums1[total]=nums1[left]
-            left-=1
-            total-=1
+        # while left>=0:
+        #     nums1[total]=nums1[left]
+        #     left-=1
+        #     total-=1
         while right>=0:
             nums1[total]=nums2[right]
             right-=1
