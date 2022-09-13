@@ -22,15 +22,15 @@ class Solution(object):
             return [newInterval]
         ans = []
         for i,item in enumerate(intervals):
-            if newInterval[0]>item[1]:
-                ans.append(item)
-                continue
-            break
+            if newInterval[0]<=item[1]:
+                break
+            ans.append(item)            
             
-        if len(ans)==len(intervals):
+        if len(ans)==len(intervals): # reach end
             ans.append(newInterval)
             return ans
-        if newInterval[1]<intervals[i][0]:
+        
+        if newInterval[1]<intervals[i][0]: # add directly
             ans.append(newInterval)
             ans.extend(intervals[i:])
             return ans

@@ -12,4 +12,13 @@ class Solution(object):
             for num in nums:
                 if value-num>=0:
                     dp[value] += dp[value-num]
+            print(dp)
+        
+#         # no combination
+#         for num in nums:
+#             for value in range(1,target+1):
+#                 if value-num>=0:
+#                     dp[value] += dp[value-num]
+#             print(dp)
+        
         return dp[-1]
